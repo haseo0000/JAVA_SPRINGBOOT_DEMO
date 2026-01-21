@@ -1,11 +1,15 @@
-package com.example.demo.dto;
+package com.example.demo.model;
 
-public class UserRequest {
+public class Temp_User {
     private String username;
     private String email;
-    private int age;
 
-    protected UserRequest() {}
+    // public User() {}
+
+    public Temp_User(String username, String  email) {
+        this.username = username;
+        this.email = email;
+    }
 
     public String getUsername() {
         return username;
@@ -22,12 +26,4 @@ public class UserRequest {
     public void setEmail(String email) {
         this.email = email;
     }   
-
-     public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }  
 }
